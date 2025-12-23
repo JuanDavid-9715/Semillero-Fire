@@ -1,0 +1,27 @@
+[build-system]
+requires = ["uv_build >= 0.9.17, <0.10.0"]
+build-backend = "uv_build"
+
+[project]
+name = "antenas"
+version = "0.1.0"
+authors = [
+  {name = "Juan David Medellin Calderon", email = "juanda.medellinca@ecci.edu.co"},
+]
+description = "Optimización de antenas"
+readme = "README.md"
+
+requires-python = "==3.10.4"
+dependencies = [
+    "perseo-optimizer",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+antena_pruebas = "antenas.prueba.main:main"
+antena_parche = "antenas.parche.main:main"
+antena_circulo = "antenas.parche_circulo.main:main"
+antena_dipolo = "antenas.dipolo.main:main"
+antena_linea = "antenas.linea.main:main"
+antena_ranura = "antenas.ranura_elemental.main:main"
+antena_radar = "antenas.radar.main:main"
