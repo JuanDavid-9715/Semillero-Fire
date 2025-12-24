@@ -2,3 +2,8 @@ desktop.ini
 
 # Videos
 2025-11-11 04-27-46.mp4
+
+# IDE
+.vscode/
+.idea/
+*.swp
